@@ -1,0 +1,90 @@
+perl-Cache
+------------------------------------------
+The Cache modules are designed to assist a developer in persisting data 
+for a specified period of time.  Often these modules are used in web 
+applications to store data locally to save repeated and redundant 
+expensive calls to remote machines or databases.
+
+Runtime requirements:
+  perl-5.10.0-3
+  perl-Digest-SHA1-2.11-1
+  perl-File-NFSLock-1.20-1
+  perl-Heap-0.80-1
+  perl-TimeDate-1.16-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygport-0.3.9-1
+  make-3.81-1
+
+Canonical website:
+  http://search.cpan.org/dist/Cache/
+
+Canonical download:
+  http://search.cpan.org/CPAN/authors/id/C/CL/CLEISHMAN/
+
+-------------------------------------------
+
+Build instructions:
+  unpack perl-Cache-2.04-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./perl-Cache-2.04-X.cygport all
+
+This will create:
+  /usr/src/perl-Cache-2.04-X-src.tar.bz2
+  /usr/src/perl-Cache-2.04-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/perl5/vendor_perl/5.10/Cache.pm
+  /usr/lib/perl5/vendor_perl/5.10/Cache/Entry.pm
+  /usr/lib/perl5/vendor_perl/5.10/Cache/File.pm
+  /usr/lib/perl5/vendor_perl/5.10/Cache/File/Entry.pm
+  /usr/lib/perl5/vendor_perl/5.10/Cache/File/Handle.pm
+  /usr/lib/perl5/vendor_perl/5.10/Cache/File/Heap.pm
+  /usr/lib/perl5/vendor_perl/5.10/Cache/IOString.pm
+  /usr/lib/perl5/vendor_perl/5.10/Cache/Memory.pm
+  /usr/lib/perl5/vendor_perl/5.10/Cache/Memory/Entry.pm
+  /usr/lib/perl5/vendor_perl/5.10/Cache/Memory/HeapElem.pm
+  /usr/lib/perl5/vendor_perl/5.10/Cache/Null.pm
+  /usr/lib/perl5/vendor_perl/5.10/Cache/Null/Entry.pm
+  /usr/lib/perl5/vendor_perl/5.10/Cache/RemovalStrategy.pm
+  /usr/lib/perl5/vendor_perl/5.10/Cache/RemovalStrategy/FIFO.pm
+  /usr/lib/perl5/vendor_perl/5.10/Cache/RemovalStrategy/LRU.pm
+  /usr/lib/perl5/vendor_perl/5.10/Cache/Tester.pm
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Cache/.packlist
+  /usr/share/doc/perl-Cache-2.04/Changes
+  /usr/share/doc/perl-Cache-2.04/LICENSE
+  /usr/share/doc/perl-Cache-2.04/README
+  /usr/share/doc/perl-Cache-2.04/TODO
+  /usr/share/man/man3/Cache.3pm.gz
+  /usr/share/man/man3/Cache.Entry.3pm.gz
+  /usr/share/man/man3/Cache.File.3pm.gz
+  /usr/share/man/man3/Cache.File.Entry.3pm.gz
+  /usr/share/man/man3/Cache.File.Handle.3pm.gz
+  /usr/share/man/man3/Cache.File.Heap.3pm.gz
+  /usr/share/man/man3/Cache.IOString.3pm.gz
+  /usr/share/man/man3/Cache.Memory.3pm.gz
+  /usr/share/man/man3/Cache.Memory.Entry.3pm.gz
+  /usr/share/man/man3/Cache.Memory.HeapElem.3pm.gz
+  /usr/share/man/man3/Cache.Null.3pm.gz
+  /usr/share/man/man3/Cache.Null.Entry.3pm.gz
+  /usr/share/man/man3/Cache.RemovalStrategy.3pm.gz
+  /usr/share/man/man3/Cache.RemovalStrategy.FIFO.3pm.gz
+  /usr/share/man/man3/Cache.RemovalStrategy.LRU.3pm.gz
+  /usr/share/man/man3/Cache.Tester.3pm.gz
+
+------------------
+
+Port Notes:
+
+----- version 2.04-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
